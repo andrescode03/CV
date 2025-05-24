@@ -1,173 +1,71 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body style="background-color:rgb(240, 240, 240);">
-    <h1>CV Software Developer</h1>
-    <p>Soy un estudiante de Desarrollo de software en la academia RIWI</p>
-    <img src="foto2.jpeg" style="display: block;">
-    
- 
-
-    <table style="width:50%">
-        <tr>
-            <th style="color:#3a3a3b;">Habilidades</th>
-            <th Proyectos style="color:#3a3a3b;">Proyectos </th>
-            <th Lenguajes style="color:#3a3a3b">Lenguajes </th>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>Inventario en Python</td>
-            <td>Python</td>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Calculadora en Python</td>
-            <td></td>
-        </tr>
-    </table>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV Andrew</title>
 </head>
 <body>
-    <div class = "container">
+<!-- Section de presentacion -->
+  <section id="presentacion">
+    <h2>Andrew CV</h2>
+    <img src="https://michelrichardphotographe.fr/wp-content/uploads/2023/03/Photo-pro-linkedin-6.jpg">
+  </section>  
+<hr>
+<!-- Section de habilidades tecnicas y proyectos -->
+<section id="proyectos">
+  <h2>Mis proyectos</h2>
+  <h3>Gestor de inventario para un tienda</h3>
+  <p>En este proyecto usamos Python, para gestionar un inventario de una tienda, donde por medio de diccionarios, pudieramos realizar tareas como actualizar, editar y eliminar productos.</p>
+  <h3>Portafolio personal</h3>
+  <p>Para este proyecto nos centramos en HTML y CSS, para agregar y gestionar cada reto durante nuestro entrenamiento.</p>
 
-        <div class="cabecera">
-            <div class="contenedor_foto_perfil"> 
-                <img src="portrait.jpg">
-            </div>
+<!-- Tabla para separar nuestro proyectos -->
+  <table>
+        <thead>
+            <tr>
+              <th>Nombre del proyecto</th>
+              <th>Tecnologias Utilizadas</th>
+              <th>Enlace</th>   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Gestor de Inventario</td>
+              <td>Python</td>
+              <td> <a href="https://andrescode03.github.io/Portafolio/" target="_blank">Ver más</a></td>
+            </tr>
+            <tr>
+              <td>Portafolio Personal</td>
+              <td>HTML / CSS </td>
+              <td><a href="https://andrescode03.github.io/Portafolio/" target="_blank">Ver más</a></td>
+            </tr>
+        </tbody>
+  </table>
+</section>
+<hr>
+<!-- Section para informacion de contacto -->
+ <section>
+  <h2>Contacto</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" required>
 
-            <div class="nombre_puesto">
-                <h1>Andrew Harper</h1>
-                <h2>Software Developer</h2>
-            </div>
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required>
 
-        </div>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+ </section>
 
-        <div class="contenido_CV">
-            <section class="habilidades"> 
-                <h3>Perfil Profesional</h3>
-                <hr>
-                <br>
-                <p class="carta_presentacion">
-                    Escribir carta de presentación
-                </p>
-                <br>
-                <h3> <i class="fas fa-cogs"></i> habilidades </h3>
-                <hr>
-                <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
-                </div>
-                <br>
-                <div class="habilidades">Gestion de proyectos</div>
-                <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
-                </div>
-                <div class="habilidades">Tabajo en equipo</div>
-                <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
-                </div>
-                <div class="habilidades">Liderazgo</div>
-
-                <h3> <i class="fas fa-lenguages"></i> Idiomas </h3>
-                <hr>
-                <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
-                </div>
-                <br>
-                <div class="habilidades">Español</div>
-                <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
-                </div>
-                <br>
-                <div class="habilidades">Ingles</div>
-                <br>
-                <h3> <i class="fas fa-envelope"></i> Contacto </h3>
-                <hr>
-                <br>
-                <ul>
-                    <li>Email: andrew@gmail.com</li>
-                    <li>Teléfono: 123456</li>
-                    <li>linkedIn <a href ="">Perfil en linkedIn</a></li>
-                </ul>
-                <br>
-            </section>
-
-            <section class="Experiencia">
-
-                <h3> <i class="fas fa-briefcase"></i>Experiencia Laboral </h3>
-                <hr>
-                <h4>Puesto</h4>
-                <div class="nombre_empresa">ISF</div>
-                <div class="año_cargo"> 2026 - 2030</div>
-                <p class="descripción_puesto">
-                    Esta es la descripcion del cargo que tuvimos durante este trabajo
-                </p>
-                <br>
-                <h4>Puesto</h4>
-                <div class="nombre_empresa">ISF</div>
-                <div class="año_cargo"> 2026 - 2030</div>
-                <p class="descripción_puesto">
-                    Esta es la descripcion del cargo que tuvimos durante este trabajo
-                </p>
-                <br>
-                <h3> <i class="fas fa-graduation-cap"></i>Formación </h3>
-                <hr>
-                <h4>Titulo</h4>
-                <div class="nombre_empresa">Colegio San Marcos</div>
-                <div class="año_cargo"> 2026 - 2030</div>
-                <p class="descripción_puesto">
-                    En este colegio hice el bachillerato
-                </p>
-                <br>
-                <h4>Titulo</h4>
-                <div class="nombre_empresa">RIWI</div>
-                <div class="año_cargo"> 2026 - 2030</div>
-                <p class="descripción_puesto">
-                    Desarrollador de Software
-                </p>
-                <br>
-
-            </section>
-
-    </div>
+ <!-- Enlaces a redes sociales -->
+<footer>
+    <h2>Redes Sociales</h2>
+    <p>
+        <a href="https://andrescode03.github.io/Portafolio/>" target="_blank">GitHub</a> 
+    </p>
+</footer>
 </body>
 </html>
